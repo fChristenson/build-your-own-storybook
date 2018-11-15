@@ -1,0 +1,68 @@
+{
+  "_from": "storybook",
+  "_id": "storybook@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-xT9XLIXQNF4wqT+mjgnEMPpDtPM=",
+  "_location": "/storybook",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "storybook",
+    "name": "storybook",
+    "escapedName": "storybook",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/storybook/-/storybook-1.0.0.tgz",
+  "_shasum": "c53f572c85d0345e30a93fa68e09c430fa43b4f3",
+  "_spec": "storybook",
+  "_where": "/Users/fredrik/Documents/building your own storybook",
+  "author": {
+    "name": "Storybook Team"
+  },
+  "bin": {
+    "storybook": "./bin/generate.js"
+  },
+  "bugs": {
+    "url": "https://github.com/storybooks/storybook-package/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@storybook/codemod": "^3.2.6",
+    "chalk": "^2.1.0",
+    "child-process-promise": "^2.2.1",
+    "commander": "^2.11.0",
+    "cross-spawn": "^5.0.1",
+    "jscodeshift": "^0.3.30",
+    "json5": "^0.5.1",
+    "latest-version": "^3.1.0",
+    "merge-dirs": "^0.2.1",
+    "opencollective": "^1.0.3",
+    "shelljs": "^0.7.8",
+    "update-notifier": "^2.1.0"
+  },
+  "deprecated": false,
+  "description": "Storybook's CLI - easiest method of adding storybook to your projects",
+  "homepage": "https://github.com/storybooks/storybook-package/tree/master/lib/cli",
+  "keywords": [
+    "cli",
+    "generator",
+    "storybook"
+  ],
+  "license": "MIT",
+  "name": "storybook",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storybooks/storybook-package.git"
+  },
+  "scripts": {
+    "postinstall": "opencollective postinstall --collective=storybook"
+  },
+  "version": "1.0.0"
+}

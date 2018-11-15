@@ -1,0 +1,39 @@
+{
+  "name": "build-your-own-storybook",
+  "version": "",
+  "description": "",
+  "scripts": {
+    "start": "node server.js",
+    "server:watch": "npx nodemon server.js",
+    "webpack:watch": "npx webpack --watch",
+    "css:watch": "npx postcss --watch ./src/public/css/main.css -o ./dist/main.css",
+    "server:dev:watch": "node ./dev/server.js",
+    "webpack:dev:watch": "npx webpack --config webpack.config.dev.js --watch",
+    "css:dev:watch": "npx postcss --watch ./dev/dev.css -o ./dist/main.css"
+  },
+  "dependencies": {
+    "express": "4.16.4",
+    "react": "16.6.1",
+    "react-dom": "16.6.1",
+    "react-redux": "5.1.1",
+    "react-router-dom": "4.3.1",
+    "redux": "4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.1.5",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.4",
+    "html-webpack-plugin": "3.2.0",
+    "nodemon": "1.18.6",
+    "postcss": "7.0.5",
+    "postcss-cli": "6.0.1",
+    "postcss-import": "12.0.1",
+    "postcss-loader": "3.0.0",
+    "react-hot-loader": "4.3.12",
+    "style-loader": "0.23.1",
+    "webpack": "4.25.1",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-middleware": "3.4.0",
+    "webpack-hot-middleware": "2.24.3"
+  }
+}

@@ -1,0 +1,55 @@
+.home {
+  background: steelblue;
+  color: white;
+  min-height: 100vh;
+}
+
+.home__h1 {
+  padding: 12px 0;
+  text-align: center;
+}
+
+.home__ul {
+  width: 200px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.home__li {
+  padding: 4px;
+  text-align: center;
+}
+
+.home__a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s color;
+}
+
+.home__a:hover {
+  color: crimson;
+}
+
+.product-list {
+  margin-top: 24px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-content: space-around;
+}
+
+.product-list__li {
+  margin: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: purple;
+  flex: 1 1 100px;
+  height: 100px;
+  border: 1px solid white;
+}
+
+.product-list__span {
+  display: inline-block;
+}

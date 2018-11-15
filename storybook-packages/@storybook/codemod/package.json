@@ -1,0 +1,67 @@
+{
+  "_args": [
+    [
+      "@storybook/codemod@3.4.11",
+      "/Users/fredrik/Documents/building your own storybook"
+    ]
+  ],
+  "_from": "@storybook/codemod@3.4.11",
+  "_id": "@storybook/codemod@3.4.11",
+  "_inBundle": false,
+  "_integrity": "sha512-KHqUFDgZyFEW3V0+0b8E1hxRhTb0prfKadnlvFv5qRs2tuWnHPww+Hm9v0ro2hft7ZktzuSdna9OMMF4mRLS3w==",
+  "_location": "/@storybook/codemod",
+  "_phantomChildren": {
+    "babel-plugin-transform-flow-strip-types": "6.22.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-1": "6.24.1",
+    "babel-register": "6.26.0",
+    "babylon": "7.0.0-beta.47",
+    "colors": "1.3.2",
+    "flow-parser": "0.86.0",
+    "lodash": "4.17.11",
+    "micromatch": "2.3.11",
+    "neo-async": "2.6.0",
+    "node-dir": "0.1.8",
+    "nomnom": "1.8.1",
+    "recast": "0.15.5",
+    "temp": "0.8.3",
+    "write-file-atomic": "1.3.4"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@storybook/codemod@3.4.11",
+    "name": "@storybook/codemod",
+    "escapedName": "@storybook%2fcodemod",
+    "scope": "@storybook",
+    "rawSpec": "3.4.11",
+    "saveSpec": null,
+    "fetchSpec": "3.4.11"
+  },
+  "_requiredBy": [
+    "/storybook"
+  ],
+  "_resolved": "https://registry.npmjs.org/@storybook/codemod/-/codemod-3.4.11.tgz",
+  "_spec": "3.4.11",
+  "_where": "/Users/fredrik/Documents/building your own storybook",
+  "bugs": {
+    "url": "https://github.com/storybooks/storybook/issues"
+  },
+  "dependencies": {
+    "jscodeshift": "^0.5.0"
+  },
+  "description": "A collection of codemod scripts written with JSCodeshift",
+  "homepage": "https://github.com/storybooks/storybook#readme",
+  "jsnext:main": "src/index.js",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@storybook/codemod",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storybooks/storybook.git"
+  },
+  "scripts": {
+    "prepare": "node ../../scripts/prepare.js"
+  },
+  "version": "3.4.11"
+}

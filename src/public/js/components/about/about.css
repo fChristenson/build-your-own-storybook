@@ -1,0 +1,31 @@
+.about {
+  background: steelblue;
+  color: white;
+  min-height: 100vh;
+}
+
+.about__h1 {
+  padding: 12px 0;
+  text-align: center;
+}
+
+.about__ul {
+  width: 200px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.about__li {
+  padding: 4px;
+  text-align: center;
+}
+
+.about__a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s color;
+}
+
+.about__a:hover {
+  color: crimson;
+}

@@ -1,0 +1,26 @@
+@import "../src/public/css/main.css";
+
+.dev {
+  display: flex;
+}
+
+.component-list {
+  flex: 0 0 100px;
+  list-style: none;
+  border-right: 1px solid black;
+  min-height: 100vh;
+}
+
+.component-list__li {
+  padding: 4px 8px;
+}
+
+.component-list__dev {
+  margin-left: 8px;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.component {
+  flex: 1 1 auto;
+}
