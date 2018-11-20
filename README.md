@@ -3,6 +3,7 @@
 ## What we will cover
 
 * How to create your own isolated development setup
+* Why you may want to consider avoiding wrapper technology for big projects
 
 ## Notes
 
@@ -12,12 +13,9 @@ Although I think the Storybook team works hard to maintain the project, Storyboo
 has often caused me a great deal of pain related to compatability issues with my
 own Webpack setup or Babel version differences.
 
-My coworkers like to emphasis a few benefits with Storybook:
-
-1. A fast development experience
-2. A isolated workflow that doesn't require you to run your application
-3. An overview of the components in your application
-
 At it's heart Storybook is just a wrapper around other tools and I have found
 that for most needs I can build something that suits long running projects better
 and has so far never caused me any issues.
+
+In fact you may find that taking some time to do this will give you even
+more development power than you would get from Storybook.

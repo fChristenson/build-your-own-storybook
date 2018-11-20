@@ -7,9 +7,7 @@
     "server:watch": "npx nodemon server.js",
     "webpack:watch": "npx webpack --watch",
     "css:watch": "npx postcss --watch ./src/public/css/main.css -o ./dist/main.css",
-    "server:dev:watch": "node ./dev/server.js",
-    "webpack:dev:watch": "npx webpack --config webpack.config.dev.js --watch",
-    "css:dev:watch": "npx postcss --watch ./dev/dev.css -o ./dist/main.css"
+    "server:dev:watch": "npx nodemon ./dev/server.js"
   },
   "dependencies": {
     "express": "4.16.4",

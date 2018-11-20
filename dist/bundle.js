@@ -498,7 +498,7 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nmodule.exports = () => React.createElement(\"h1\", null, \"ABOUT\");\n\n//# sourceURL=webpack:///./src/public/js/components/about/About.js?");
+eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nmodule.exports = () => {\n  return React.createElement(\"div\", {\n    className: \"about\"\n  }, React.createElement(\"h1\", {\n    className: \"about__h1\"\n  }, \"ABOUT\"), React.createElement(\"ul\", {\n    className: \"about__ul\"\n  }, React.createElement(\"li\", {\n    className: \"about__li\"\n  }, React.createElement(\"a\", {\n    className: \"about__a\",\n    href: \"#\"\n  }, \"Contact\")), React.createElement(\"li\", {\n    className: \"about__li\"\n  }, React.createElement(\"a\", {\n    className: \"about__a\",\n    href: \"#\"\n  }, \"Some other info\"))));\n};\n\n//# sourceURL=webpack:///./src/public/js/components/about/About.js?");
 
 /***/ }),
 
@@ -520,7 +520,29 @@ eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/inde
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nmodule.exports = () => React.createElement(\"h1\", null, \"HOME\");\n\n//# sourceURL=webpack:///./src/public/js/components/home/Home.js?");
+eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nconst ProductList = __webpack_require__(/*! ./components/productList/ProductList */ \"./src/public/js/components/home/components/productList/ProductList.js\");\n\nclass Home extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      products: []\n    };\n  }\n\n  async componentDidMount() {\n    const res = await fetch(\"/api/v1/products\");\n    const products = await res.json();\n    this.setState({\n      products\n    });\n  }\n\n  render() {\n    return React.createElement(\"div\", {\n      className: \"home\"\n    }, React.createElement(\"h1\", {\n      className: \"home__h1\"\n    }, \"HOME\"), React.createElement(ProductList, {\n      products: this.state.products\n    }));\n  }\n\n}\n\nmodule.exports = Home;\n\n//# sourceURL=webpack:///./src/public/js/components/home/Home.js?");
+
+/***/ }),
+
+/***/ "./src/public/js/components/home/components/productList/ProductList.js":
+/*!*****************************************************************************!*\
+  !*** ./src/public/js/components/home/components/productList/ProductList.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nconst ProductListItem = __webpack_require__(/*! ../productListItem/ProductListItem */ \"./src/public/js/components/home/components/productListItem/ProductListItem.js\");\n\nmodule.exports = ({\n  products = []\n}) => {\n  return React.createElement(\"ul\", {\n    className: \"product-list\"\n  }, products.map(product => {\n    return React.createElement(ProductListItem, {\n      key: product.id,\n      product: product\n    });\n  }));\n};\n\n//# sourceURL=webpack:///./src/public/js/components/home/components/productList/ProductList.js?");
+
+/***/ }),
+
+/***/ "./src/public/js/components/home/components/productListItem/ProductListItem.js":
+/*!*************************************************************************************!*\
+  !*** ./src/public/js/components/home/components/productListItem/ProductListItem.js ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nmodule.exports = ({\n  product\n}) => {\n  return React.createElement(\"li\", {\n    className: \"product-list__li\",\n    key: product.id\n  }, React.createElement(\"span\", {\n    className: \"product-list__span\"\n  }, product.name));\n};\n\n//# sourceURL=webpack:///./src/public/js/components/home/components/productListItem/ProductListItem.js?");
 
 /***/ }),
 

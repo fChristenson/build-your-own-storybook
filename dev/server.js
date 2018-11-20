@@ -6,7 +6,7 @@ const middleware = require("webpack-dev-middleware");
 const webpackConfig = require("../webpack.config.dev");
 const compiler = webpack(webpackConfig);
 const webpackHotMiddleware = require("webpack-hot-middleware");
-const productListData = require("../src/public/js/components/home/__tests__/fixtures/productList");
+const productListData = require("../src/public/js/components/home/components/productList/__tests__/fixtures/productList");
 
 app.use(express.json());
 
@@ -19,7 +19,7 @@ app.use(
 app.use(webpackHotMiddleware(compiler));
 
 app.post("/api/v1/feedback", (req, res) => {
-  res.json({ message: "Thank you for your feedback" });
+  res.json({ message: "Thank you for your feedback!" });
 });
 
 app.get("/api/v1/products", (req, res) => {
